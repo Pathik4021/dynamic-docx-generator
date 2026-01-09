@@ -147,11 +147,40 @@ generator.addTable({
     ['Widget C', '3', '$199.00']
   ],
   style: {
+    // Basic Colors
     headerBgColor: 'C9DAF8',
-    fontSize: 24
+    headerTextColor: '000000',
+    borderColor: 'auto',
+    
+    // Fonts
+    fontSize: 24,       // 12pt
+    fontFamily: 'Calibri',
+    
+    // Layout & Dimensions (New!)
+    headerHeight: 400,  // Header row height in twips
+    rowHeight: 350,     // Data row height in twips
+    tableAlign: 'center', // 'center', 'left', or 'right'
+    cellPadding: 100,   // Cell margins in twips
+    borderSize: 4       // Border thickness (eights of a point)
   }
 });
 ```
+
+### Table Style Properties
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `headerBgColor` | string | `'C9DAF8'` | Hex color for header background (no #) |
+| `headerTextColor` | string | `'000000'` | Hex color for header text (no #) |
+| `borderColor` | string | `'auto'` | Hex color for borders (no #) |
+| `fontSize` | number | `24` | Font size in half-points (24 = 12pt) |
+| `fontFamily` | string | `'Times New Roman'` | Font family name |
+| `headerHeight` | number | `400` | Height of header row in twips |
+| `rowHeight` | number | `350` | Height of data rows in twips |
+| `tableAlign` | string | `'center'` | Alignment of the table: `'center'`, `'left'`, `'right'` |
+| `cellPadding` | number | `100` | Padding inside cells in twips |
+| `borderSize` | number | `4` | Thickness of borders in eighths of a point |
+
 
 ##### generate()
 
