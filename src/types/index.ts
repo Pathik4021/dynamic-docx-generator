@@ -40,6 +40,16 @@ export interface TableStyle {
     fontSize?: number;
     /** Font family */
     fontFamily?: string;
+    /** Header row height in twips (1/20th of a point). Default: 400 */
+    headerHeight?: number;
+    /** Data row height in twips (1/20th of a point). Default: 350 */
+    rowHeight?: number;
+    /** Table alignment ('center' | 'left' | 'right'). Default: 'center' */
+    tableAlign?: 'center' | 'left' | 'right';
+    /** Cell padding in twips. Default: 100 */
+    cellPadding?: number;
+    /** Border size in eighths of a point (4 = 1/2pt). Default: 4 */
+    borderSize?: number;
 }
 
 /**

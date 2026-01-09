@@ -67,7 +67,13 @@ async function generateDocument() {
       headerBgColor: '4472C4', // Azure blue
       headerTextColor: 'FFFFFF', // White
       fontSize: 22, // 11pt
-      fontFamily: 'Calibri'
+      fontFamily: 'Calibri',
+      // New custom styling features
+      headerHeight: 600,
+      rowHeight: 400,
+      tableAlign: 'center',
+      cellPadding: 150,
+      borderSize: 8
     }
   });
 
